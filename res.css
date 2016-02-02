@@ -12,6 +12,10 @@ body {
   font-weight: 700;
 }
 
+.check:before {
+  content: "Done";
+}
+
 .new-resolution input[type="text"] {
   padding: 1.5em;
 }
