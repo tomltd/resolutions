@@ -3,7 +3,14 @@ Resolutions = new Mongo.Collection('resolutions');
 if (Meteor.isClient) {
   Template.body.helpers({
     resolutions: function() {
+      if (Session.get('hideFinished')) {
+        return Resolutions.find({checked: {$ne: true}});
+      } else {
         return Resolutions.find();
+      }
+    },
+    hideFinished: function() {
+      return Session.get('hideFinished');
     }
   });
   Template.body.events({
@@ -17,6 +24,9 @@ if (Meteor.isClient) {
 
       event.target.title.value = ""; //clears value from field
       return false; // make sure page does not refresh
+    },
+    'change .hide-finished': function(event) {
+      Session.set('hideFinished', event.target.checked);
     }
   });
 
