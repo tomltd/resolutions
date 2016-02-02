@@ -3,13 +3,26 @@
 </head>
 
 <body>
+  <div class="container">
+    <header>
+      <h1>Monthly Resolutions</h1>
+      <form class="new-resolution">
+        <input type="text" name="title" placeholder="A new resolution">
+        <input type="submit" value="Submit">
+      </form>
+    </header>
   <ul>
     {{#each resolutions}}
       {{>resolution }}
     {{/each}}
   </ul>
+</div>
 </body>
 
 <template name="resolution">
-  <li>{{title}}</li>
+  <li class="{{#if checked}}check{{/if}}">
+      <input class="toggle-checked" type="checkbox" checked="{{checked}}">
+      <span class="text">{{title}}</span>
+      <button class="delete">Remove</button>
+  </li>
 </template>

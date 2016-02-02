@@ -2,3 +2,9 @@
 body {
   background: lightblue;
 }
+
+.check {
+  background: lightgray;
+  color: red;
+  font-style: italic;
+}
