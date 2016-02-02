@@ -12,6 +12,12 @@ body {
   font-weight: 700;
 }
 
+.new-resolution input[type="text"] {
+  padding: 1.5em;
+}
+
+
+
 button,
 input {
   border-radius: 6px;
