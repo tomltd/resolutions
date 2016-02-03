@@ -8,9 +8,13 @@ body {
   background: $bodygray;
   font-family: 'Roboto', sans-serif;
   max-width: 600px;
+  margin: auto;
 }
 
 .main {
+  padding: 2em;
+  border: 2px solid;
+  border-radius: 6px;
 }
 
 h1 {
