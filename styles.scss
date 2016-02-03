@@ -9,6 +9,21 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.main {
+  max-width: 600px;
+}
+
+.new-resolution {
+  text-align: center;
+  input {
+    width: 300px;
+    margin-bottom: 1em;
+  }
+}
+
+button.delete {
+  float: right;
+}
 .check {
   background: $bodyblue;
   color: red;
@@ -20,7 +35,7 @@ body {
 }
 
 .new-resolution input[type="text"] {
-  padding: 1.5em;
+  padding: 1em;
 }
 
 
@@ -34,4 +49,10 @@ input {
 li {
   list-style-type: none;
   margin-bottom: 1em;
+  border-bottom: 2px solid darkgray;
+  padding-bottom: .5em;
+}
+
+footer {
+  margin-top: 2em;
 }
