@@ -7,10 +7,14 @@ $bodygray: lightgray;
 body {
   background: $bodygray;
   font-family: 'Roboto', sans-serif;
+  max-width: 600px;
 }
 
 .main {
-  max-width: 600px;
+}
+
+h1 {
+  text-align: center;
 }
 
 .new-resolution {
