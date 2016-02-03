@@ -2,14 +2,15 @@
 /* CSS declarations go here */
 
 $bodyblue: lightblue;
+$bodygray: lightgray;
 
 body {
-  background: $bodyblue;
+  background: $bodygray;
   font-family: 'Roboto', sans-serif;
 }
 
 .check {
-  background: lightgray;
+  background: $bodyblue;
   color: red;
   font-style: italic;
   font-weight: 700;
